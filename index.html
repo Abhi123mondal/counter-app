@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        document
+    </title>
+    <link rel="stylesheet" href="css.css">
+  <style>
+     </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Counter</h1>
+        <div id="container">
+            <div id="countervalue">0</div>
+            <button id="increment">+</button>
+            <button id="decrement">-</button>
+        </div>
+        <script>
+            let increment=document.querySelector("#increment");
+let decrement=document.querySelector("#decrement");
+let countervalue=document.querySelector("#countervalue");
+let counter=0;
+increment.addEventListener("click",()=>{
+counter++;
+countervalue.innerText=counter;
+})
+decrement.addEventListener('click',()=>{
+    counter--;
+    countervalue.innerText=counter;
+})
+
+        </script>
+    </body>
+</html>
